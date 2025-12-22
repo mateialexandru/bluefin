@@ -15,7 +15,7 @@ dnf5 install -y emacs
 # pdf-tools in emacs..
 dnf5 install -y autoconf automake gcc libpng-devel make poppler-devel poppler-glib-devel zlib-devel pkgconf
 
-brew install ripgrep fd shellcheck gh grip pandoc devcontainer
+#brew install ripgrep fd shellcheck gh grip pandoc devcontainer
 
 # Use a COPR Example:
 #
