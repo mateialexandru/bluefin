@@ -12,6 +12,10 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 dnf5 install -y emacs
+# pdf-tools in emacs..
+dnf5 install -y autoconf automake gcc libpng-devel make poppler-devel poppler-glib-devel zlib-devel pkgconf
+
+brew install ripgrep fd shellcheck gh grip pandoc devcontainer
 
 # Use a COPR Example:
 #
