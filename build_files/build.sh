@@ -16,7 +16,8 @@ dnf5 install -y emacs
 dnf5 install -y autoconf automake gcc libpng-devel make poppler-devel poppler-glib-devel zlib-devel pkgconf
 
 # So brew clang++ can find C++ headers and link -lstdc++.
-dnf5 install -y libstdc++-devel
+# gcc-c++ ships /usr/lib/gcc/.../libstdc++.so (the linker symlink) and pulls in libstdc++-devel for headers.
+dnf5 install -y gcc-c++
 
 #please install these
 # ujust bluefin-cli
