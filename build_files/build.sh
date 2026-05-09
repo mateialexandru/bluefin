@@ -15,7 +15,14 @@ dnf5 install -y emacs
 # pdf-tools in emacs..
 dnf5 install -y autoconf automake gcc libpng-devel make poppler-devel poppler-glib-devel zlib-devel pkgconf
 
-#brew install ripgrep fd shellcheck gh grip pandoc devcontainer
+# So brew clang++ can find C++ headers and link -lstdc++.
+dnf5 install -y libstdc++-devel
+
+#please install these
+# ujust bluefin-cli
+# brew install ripgrep fd shellcheck gh grip pandoc devcontainer gemini-cli
+
+
 
 # Use a COPR Example:
 #
